@@ -107,39 +107,8 @@ public function exportOrder($data){
         $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(30);
         $spreadsheet->getActiveSheet()->getColumnDimension('E')->setWidth(40);
         $spreadsheet->getActiveSheet()->getColumnDimension('F')->setWidth(10);
-        $spreadsheet->getActiveSheet()->getColumnDimension('G')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('H')->setWidth(30);
-        $spreadsheet->getActiveSheet()->getColumnDimension('I')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('J')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('K')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('L')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('M')->setWidth(10);
-        $spreadsheet->getActiveSheet()->getColumnDimension('N')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('O')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('P')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('Q')->setWidth(13);
-        $spreadsheet->getActiveSheet()->getColumnDimension('R')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('S')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('T')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('U')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('V')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('W')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('X')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('Y')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('Z')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AA')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AB')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AC')->setWidth(25);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AD')->setWidth(10);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AE')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AF')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AG')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AH')->setWidth(15);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AI')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AJ')->setWidth(20);
-        $spreadsheet->getActiveSheet()->getColumnDimension('AK')->setWidth(20);
-        $sheet->mergeCells('A1:AK1');//单元格合并合并
-        $sheet->getStyle('A1:AK1')->getFont()->setBold(true)->setName('宋体')
+        $sheet->mergeCells('A1:F1');//单元格合并合并
+        $sheet->getStyle('A1:F1')->getFont()->setBold(true)->setName('宋体')
             ->setSize(24);//单元格内字体样式,颜色
         $sheet->getStyle('A:AK')->getFont()->setName('Times New Roman');
         $sheet->getStyle('A1:AK1')->getFont()->setBold(true);
